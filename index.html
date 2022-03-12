@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Музей Пушкина</title>
+    <style>
+        .visually-hidden {
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            white-space: nowrap;
+            clip: rect(1px, 1px, 1px, 1px);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <h1>Музей Пушкина</h1>
+        <img src="resources/logo.svg" alt="">
+    </div>
+    <form role="search">
+        <div>
+            <input type="text" aria-label="Поиск">
+            <svg width="20" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.81548 0.282349C3.50561 0.282349 0 3.64736 0 7.78431C0 11.9213 3.50565 15.2863 7.81552 15.2863C9.52472 15.2863 11.106 14.7547 12.3928 13.8585L17.5 18.7608C17.8324 19.0798 18.3713 19.0797 18.7037 18.7607L19.2508 18.2356C19.5831 17.9165 19.5831 17.3992 19.2507 17.0801L14.1436 12.1779C15.0773 10.9428 15.631 9.42494 15.631 7.78431C15.631 3.64735 12.1253 0.282349 7.81548 0.282349ZM2.47621 7.78431C2.47621 4.95855 4.87165 2.65921 7.81552 2.65921C10.7594 2.65921 13.1548 4.95855 13.1548 7.78431C13.1548 10.6101 10.7594 12.9094 7.81552 12.9094C4.87165 12.9094 2.47621 10.6101 2.47621 7.78431Z"
+                      fill="black"/>
+            </svg>
+        </div>
+    </form>
+    <div>
+        <a href="/ru">Ru</a>
+        <a href="/en">En</a>
+    </div>
+    <div>
+        <button>
+            <img src="resources/user.svg" alt="">
+        </button>
+    </div>
+    <nav aria-label="Главная">
+        <a href="#exhibitions">Выставки и события</a>
+        <a href="#museum">Музей</a>
+        <a href="">Посетителям</a>
+    </nav>
+</header>
+<aside>
+    <div role="group">
+        <button>
+            <img src="resources/arrow.svg" alt="">
+        </button>
+        <img src="resources/durer.png" alt="">
+        <button>
+            <img src="resources/arrow.svg" alt="">
+        </button>
+    </div>
+    <div>
+        <a href="">Купить билет</a>
+        <a href="">Стать другом</a>
+        <a href="">Онлайн-магазин</a>
+    </div>
+</aside>
+<main>
+    <section id="exhibitions" aria-labelledby="exhibitions-header">
+        <h2 id="exhibitions-header">Выставки и события</h2>
+        <a href="">Все</a>
+        <a href="">Сегодня</a>
+        <a href="">Завтра</a>
+        <article>
+            <img src="resources/exhibition-1.png" alt="">
+            <h3 id="exhibition-1">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+            <span>Выставка до 20 ноября</span>
+            <a href=""
+               aria-labelledby="exhibition-1-link exhibition-1"
+               id="exhibition-1-link"
+            >Купить билет</a>
+        </article>
+        <article>
+            <img src="resources/exhibition-2.png" alt="">
+            <h3 id="exhibition-2">Тату</h3>
+            <span>Выставка до 27 сентября</span>
+            <p>Текст о выставке</p>
+            <a href=""
+               aria-labelledby="exhibition-2-link exhibition-2"
+               id="exhibition-2-link"
+            >Купить билет</a>
+        </article>
+        <article>
+            <img src="resources/exhibition-3.png" alt="">
+            <h3 id="exhibition-3">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина</h3>
+            <span>Выставка до 1 ноября</span>
+            <p>Текст о выставке</p>
+            <a href=""
+               aria-labelledby="exhibition-3-link exhibition-3"
+               id="exhibition-3-link"
+            >Купить билет</a>
+        </article>
+    </section>
+    <section id="museum" aria-labelledby="museum-header">
+        <h2 id="museum-header">Музей</h2>
+        <a href="">Здания</a>
+        <a href="">История</a>
+        <article>
+            <img src="resources/building-1.png" alt="">
+            <h3>МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
+            ул. Большая Бронная, 2/6, 16 этаж, кв. 58
+
+            <a href="">Подробнее</a>
+        </article>
+        <article>
+            <img src="resources/building-2.png" alt="">
+            <h3>ЦЭВ «МУСЕЙОН»</h3>
+            Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)
+
+            <a href="">Подробнее</a>
+        </article>
+        <article>
+            <img src="resources/building-3.png" alt="">
+            <h3>УСАДЬБА ЛОПУХИНЫХ</h3>
+            Малый Знаменский пер., 3/5с4
+
+            <a href="">Подробнее</a>
+        </article>
+        <article>
+            <img src="resources/building-4.png" alt="">
+            <h3>УЧЕБНЫЙ МУЗЕЙ</h3>
+            ул. Чаянова, 15
+
+            <a href="">Подробнее</a>
+        </article>
+        <article>
+            <img src="resources/building-5.png" alt="">
+            <h3>ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
+            ул. Волхонка, 10
+
+            <a href="">Подробнее</a>
+        </article>
+        <article>
+            <img src="resources/building-6.png" alt="">
+            <h3>ГАЛЕРЕЯ</h3>
+            ул. Волхонка, 14
+
+            <a href="">Подробнее</a>
+        </article>
+        <article aria-label="История музея">
+            <p>
+                Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России
+                художественных собраний зарубежного искусства с древнейших времен до наших дней.
+            </p>
+            <p>
+                В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с
+                произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных произведений
+                живописи, скульптуры, графики и декоративно-прикладного искусства.
+            </p>
+            <p>
+                В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта, Античности,
+                собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий дворики – занимают
+                слепки. На втором этаже Главного здания в залах размещены слепки произведений искусства Древней Греции,
+                Рима, Средних веков и Возрождения.
+            </p>
+            <p>
+                В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, –
+                ориентированное
+                на современное российское и западное искусство во всех аспектах – выставочном, образовательном и
+                исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой открытую, интерактивную
+                сцену,
+                демонстрирующую развитие мировой культуры с древности до наших дней, живое, знакомое с детства
+                пространство
+                для получения знаний и общения.
+            </p>
+            <a href="">Читать далее</a>
+        </article>
+    </section>
+    <section aria-labelledby="broadcast-header">
+        <h2 id="broadcast-header">Онлайн-трансляции</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5qRR-5H1XgU" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+    <section aria-labelledby="online-exhibitions-header">
+        <h2 id="online-exhibitions-header">Экскурсии и лекции в прямом эфире</h2>
+        С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и детей,
+        оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен формат живого
+        общения с возможностью задавать вопросы экскурсоводу (лектору).
+        <a href="">Подробнее про эфиры</a>.
+
+        Мы будем благодарны за любое <a href="">пожертвование</a>. Все поступившие средства будут направлены на
+        организацию онлайн-проектов для наших посетителей.
+    </section>
+</main>
+<footer>
+    <ul>
+        <li>Посетителям с ограниченными возможностями</li>
+        <li>Билеты и льготы</li>
+        <li>Противодействие коррупции</li>
+    </ul>
+    <div>
+        Соц. сети
+        <ul>
+            <li>Facebook</li>
+            <li>Telegram</li>
+            <li>Email</li>
+        </ul>
+    </div>
+    <div>
+        Подписка на новости
+        <form action="/subscribe">
+            <div>
+                <label for="subscription-email">E-mail</label>
+                <input id="subscription-email" type="email" required>
+            </div>
+            <div>
+                <input id="personal-data-agreement" type="checkbox" required>
+                <label for="personal-data-agreement">Согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
+</footer>
+</body>
+</html>
