@@ -1,0 +1,320 @@
+main,
+aside,
+footer,
+header {
+  padding: 0 10%;
+}
+
+.section-margins {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.header {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.header__nav {
+  display: block;
+  margin-top: 7rem;
+}
+
+.header__logo {
+  margin-top: -1rem;
+}
+
+.search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid rgba(199, 210, 233, 1);
+  padding: 0 2rem;
+}
+
+.search:focus-within {
+  outline: 2px solid black;
+}
+
+.search__input {
+  border: none;
+  margin-right: 8px;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.left-arrow,
+.right-arrow {
+  color: #bbb;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  color: black;
+}
+
+.left-arrow {
+  transform: rotate(-180deg);
+  width: 4rem;
+  margin-left: -6rem;
+  margin-right: 2rem;
+}
+
+.right-arrow {
+  width: 4rem;
+  margin-left: 2rem;
+  margin-right: -6rem;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: hsl(262, 81%, 46%);
+  border-radius: 8px;
+  padding: .5rem 3rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hsl(262, 81%, 46%);
+}
+
+.btn-link:hover {
+  background-color: hsl(262, 81%, 30%);
+}
+
+.h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 59px;
+
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.filter-btn,
+.tab-btn {
+  color: black;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+}
+
+.filter-btn:hover,
+.tab-btn:hover {
+  background-color: hsl(221, 44%, 95%);
+}
+
+.filter-btn.active,
+.tab-btn.active {
+  background: rgb(199, 210, 233);
+}
+
+.exhibition-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4.3rem;
+}
+
+.exhibition-card {
+  display: flex;
+  flex-flow: column;
+
+  width: 31.2rem;
+  margin: 0 4.3rem 5rem;
+}
+
+.exhibition-card__img {
+}
+
+.exhibition-card__header {
+}
+
+.exhibition-card__date {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.building-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -4.3rem;
+}
+
+.building-card {
+  display: flex;
+  flex-flow: column;
+
+  width: 31.2rem;
+  margin: 0 4.3rem 5rem;
+}
+
+.footer {
+  background-color: rgba(241, 241, 241, 1);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.link,
+.link:visited,
+.link:active {
+  color: inherit;
+}
+
+.header__link:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.header__lang {
+  display: flex;
+}
+
+.header-lang__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-lang__btn.active {
+  background-color: rgb(199, 210, 233);
+}
+
+.header-lang__btn:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.socials {
+
+}
+
+.socials__header {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__list-element:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.subscription {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'header header'
+                       'email submit'
+                       'check check';
+  grid-row-gap: .8rem;
+  grid-column-gap: 1.5rem;
+}
+
+.subscription__email {
+  grid-area: email;
+  display: flex;
+  flex-flow: column;
+}
+
+.subscription__personal-data {
+  grid-area: check;
+}
+
+.subscription__submit {
+  grid-area: submit;
+  align-self: end;
+}
+
+.subscription__header {
+  grid-area: header;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.subscription__email-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: .5rem 0;
+}
+
+.footer__left {
+  display: flex;
+  flex-flow: column;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: column;
+}
+
+.exhibitions-items {
+  width: 100%;
+  height: 42rem;
+}
+
+.exhibitions-item {
+  position: relative;
+}
+
+.exhibitions-item__img {
+  width: 100%;
+  height: 42rem;
+  object-fit: cover;
+}
+
+.exhibitions-item__btn-1,
+.exhibitions-item__btn-2 {
+  position: absolute;
+}
+
+.exhibitions-item__btn-1 {
+  bottom: 3rem;
+  left: 5rem;
+}
+
+.exhibitions-item__btn-2 {
+  top: 3rem;
+  left: 5rem;
+}
+
+.user-login-btn {
+  height: 100%;
+  padding: .2rem .5rem;
+  border-radius: 8px;
+}
+
+.user-login-btn:hover {
+  background-color: #ccc;
+}
+
+.dialog__close-btn {
+  border-radius: 8px;
+}
+
+.dialog__close-btn:hover {
+  background-color: #ccc;
+}
