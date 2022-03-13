@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Александр Слепченков | Музей Пушкина</title>
+  <script type="module" crossorigin src="/assets/index.bdeab883.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.735d07d3.js">
+  <link rel="stylesheet" href="/assets/index.a7c9e29f.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__main">
+        <div class="header__logo">
+            <h1 class="visually-hidden">Музей Пушкина</h1>
+            <img src="/assets/logo.9a21883f.svg" alt="">
+        </div>
+        <form role="search" class="search me-m">
+            <input type="search" aria-label="Поиск" class="search__input">
+            <button type="submit">
+                <svg width="20" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" focusable="false">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.81548 0.282349C3.50561 0.282349 0 3.64736 0 7.78431C0 11.9213 3.50565 15.2863 7.81552 15.2863C9.52472 15.2863 11.106 14.7547 12.3928 13.8585L17.5 18.7608C17.8324 19.0798 18.3713 19.0797 18.7037 18.7607L19.2508 18.2356C19.5831 17.9165 19.5831 17.3992 19.2507 17.0801L14.1436 12.1779C15.0773 10.9428 15.631 9.42494 15.631 7.78431C15.631 3.64735 12.1253 0.282349 7.81548 0.282349ZM2.47621 7.78431C2.47621 4.95855 4.87165 2.65921 7.81552 2.65921C10.7594 2.65921 13.1548 4.95855 13.1548 7.78431C13.1548 10.6101 10.7594 12.9094 7.81552 12.9094C4.87165 12.9094 2.47621 10.6101 2.47621 7.78431Z"
+                          fill="black"
+                    />
+                </svg>
+            </button>
+        </form>
+        <nav aria-label="Язык" class="header__lang me-xl">
+            <span aria-label="Русский" class="header-lang__btn active">Ru</span>
+            <a href="/en" aria-label="English" hreflang="en" class="header-lang__btn">En</a>
+        </nav>
+        <div>
+            <button aria-label="Откроет окно логина" id="login-modal-btn" class="user-login-btn">
+                <img src="/assets/user.342f056e.svg" alt="">
+            </button>
+            <div class="d-none" id="login-modal-wrapper">
+                <div class="dialog-backdrop">
+                    <div role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="login-modal-header"
+                         class="dialog"
+                         id="login-modal"
+                    >
+                        <button class="dialog__close-btn" id="login-modal-close-btn"
+                                aria-label="Закрыть модальное окно">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px"
+                                 fill="#000000" aria-hidden="true" focusable="false">
+                                <path d="M0 0h24v24H0V0z" fill="none"/>
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                            </svg>
+                        </button>
+                        <form action="" class="dialog__form">
+                            <h2 id="login-modal-header" class="form__header h2">Вход</h2>
+                            <label class="form__label">
+                                Логин
+                                <input id="login" type="text" autocomplete="login" class="form__input">
+                            </label>
+                            <label class="form__label">
+                                Пароль
+                                <input id="password" type="password" autocomplete="password" class="form__input">
+                            </label>
+                            <button type="submit" class="form__btn">Вход</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav aria-label="Главная" class="header__nav">
+        <a href="#exhibitions" class="link header__link">Выставки и события</a>
+        <a href="#museum" class="link header__link">Музей</a>
+    </nav>
+</header>
+<aside>
+    <section
+            class="carousel mb-xl"
+            aria-roledescription="carousel"
+            aria-label="Выставки"
+    >
+        <button class="left-arrow" aria-controls="exhibitions-items" id="exhibitions-items-prev-btn"
+                aria-label="Предыдущая выставка">
+            <svg width="42" height="76" viewBox="0 0 42 76" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true" focusable="false">
+                <path d="M40.6146 40.0853L5.52078 75.1791C4.35898 76.3011 2.50765 76.2689 1.38561 75.1071C0.290983 73.9738 0.290983 72.1771 1.38561 71.0439L34.4118 38.0177L1.38561 4.99153C0.24386 3.84961 0.24386 1.99827 1.38561 0.856354C2.5277 -0.285393 4.37886 -0.285393 5.52078 0.856354L40.6146 35.9501C41.7563 37.0922 41.7563 38.9434 40.6146 40.0853Z"
+                      fill="currentColor"/>
+            </svg>
+        </button>
+        <div id="exhibitions-items" aria-live="polite" class="exhibitions-items">
+            <div class="exhibitions-item" role="group" aria-roledescription="slide" aria-label="1 of 2">
+                <img class="exhibitions-item__img" src="/assets/durer.24c8e81a.png" alt="От Дюрера до Матисса.
+                 Избранные рисунки из собрания музея Пушкина. 10 июля - 1 ноября. Главное здание"
+                >
+                <a class="btn-link exhibitions-item__btn-1"
+                   href="/tickets/1"
+                   target="_blank"
+                   rel="noreferrer"
+                   aria-label="Билеты на выставку от Дюрера до Матисса"
+                >Билеты онлайн</a>
+            </div>
+            <div class="exhibitions-item d-none" role="group" aria-roledescription="slide" aria-label="2 of 2">
+                <img class="exhibitions-item__img" src="/assets/exhibition-2.e4d603eb.png"
+                     alt="Тату. Более 3 тысяч лет истории тату. 10 июля - 27 ноября">
+                <a class="btn-link exhibitions-item__btn-2"
+                   href="/tickets/2"
+                   target="_blank"
+                   rel="noreferrer"
+                   aria-label="Билеты на выставку Тату"
+                >Билеты онлайн</a>
+            </div>
+        </div>
+        <button class="right-arrow" aria-controls="exhibitions-items" id="exhibitions-items-next-btn"
+                aria-label="Следующая выставка">
+            <svg width="42" height="76" viewBox="0 0 42 76" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true" focusable="false">
+                <path d="M40.6146 40.0853L5.52078 75.1791C4.35898 76.3011 2.50765 76.2689 1.38561 75.1071C0.290983 73.9738 0.290983 72.1771 1.38561 71.0439L34.4118 38.0177L1.38561 4.99153C0.24386 3.84961 0.24386 1.99827 1.38561 0.856354C2.5277 -0.285393 4.37886 -0.285393 5.52078 0.856354L40.6146 35.9501C41.7563 37.0922 41.7563 38.9434 40.6146 40.0853Z"
+                      fill="currentColor"/>
+            </svg>
+        </button>
+    </section>
+    <div>
+        <a href="/tickets" class="btn-link">Купить билет</a>
+        <a href="/become-friend" class="btn-link">Стать другом</a>
+        <a href="/shop" class="btn-link">Онлайн-магазин</a>
+    </div>
+</aside>
+<main>
+    <section id="exhibitions" aria-labelledby="exhibitions-header" class="section-margins">
+        <h2 id="exhibitions-header" class="h2">Выставки и события</h2>
+        <div role="group" aria-label="Фильтры" class="mb-xl">
+            <button class="filter-btn active" id="exhibition-filter-all">Все</button>
+            <button class="filter-btn" id="exhibition-filter-today">Сегодня</button>
+            <button class="filter-btn" id="exhibition-filter-tomorrow">Завтра</button>
+        </div>
+        <ul class="exhibition-cards" id="exhibitions-list">
+            <li>
+                <article id="exhibition-1" class="exhibition-card">
+                    <img src="/assets/exhibition-1.3f747ec9.png" alt="" class="mb-l">
+                    <h3 id="exhibition-1-header" class="mb-m">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+                    <span class="exhibition-card__date mb-s">Выставка до 20 ноября</span>
+                    <p class="mb-l">Текст о выставке</p>
+                    <a href="/tickets/1"
+                       aria-labelledby="exhibition-1-link exhibition-1-header"
+                       id="exhibition-1-link"
+                    >Купить билет</a>
+                </article>
+            </li>
+            <li>
+                <article id="exhibition-2" class="exhibition-card">
+                    <img src="/assets/exhibition-2.e4d603eb.png" alt="" class="exhibition-card__img mb-l">
+                    <h3 id="exhibition-2-header" class="mb-m">Тату</h3>
+                    <span class="exhibition-card__date mb-s">Выставка до 27 сентября</span>
+                    <p class="mb-l">Текст о выставке</p>
+                    <a href="/tickets/2"
+                       aria-labelledby="exhibition-2-link exhibition-2-header"
+                       id="exhibition-2-link"
+                    >Купить билет</a>
+                </article>
+            </li>
+            <li>
+                <article id="exhibition-3" class="exhibition-card">
+                    <img src="/assets/exhibition-3.8f7e6b74.png" alt="" class="exhibition-card__img mb-l">
+                    <h3 id="exhibition-3-header" class="exhibition-card__header mb-m">От Дюрера до Матисса. Избранные рисунки
+                        из собрания ГМИИ им. А.С. Пушкина</h3>
+                    <span class="exhibition-card__date mb-s">Выставка до 1 ноября</span>
+                    <p class="mb-l">Текст о выставке</p>
+                    <a href="/tickets/3"
+                       aria-labelledby="exhibition-3-link exhibition-3-header"
+                       id="exhibition-3-link"
+                    >Купить билет</a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id="museum" aria-labelledby="museum-header" class="section-margins">
+        <h2 id="museum-header" class="h2">Музей</h2>
+        <div id="museum-tabs" role="tablist" aria-labelledby="museum-header" class="mb-xl">
+            <button type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="buildings-tab"
+                    id="buildings"
+                    class="tab-btn active"
+            >
+                Здания
+            </button>
+            <button type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="history-tab"
+                    id="history"
+                    tabindex="-1"
+                    class="tab-btn"
+            >
+                История
+            </button>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="buildings-tab"
+             aria-labelledby="buildings">
+            <ul class="building-cards">
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-1.753c8926.png" alt="" class="mb-l">
+                        <h3 id="building-1-name" class="mb-s">МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
+                        <span class="mb-m">ул. Большая Бронная, 2/6, 16 этаж, кв. 58</span>
+
+                        <a href="/buildings/1" id="building-1-more" aria-labelledby="building-1-more building-1-name">Подробнее</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-2.fb83f978.png" alt="" class="mb-l">
+                        <h3 id="building-2-name" class="mb-s">ЦЭВ «МУСЕЙОН»</h3>
+                        <span class="mb-m">Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</span>
+
+                        <a href="/buildings/2" id="building-2-more" aria-labelledby="building-2-more building-2-name">Подробнее</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-3.2bb73abf.png" alt="" class="mb-l">
+                        <h3 id="building-3-name" class="mb-s">УСАДЬБА ЛОПУХИНЫХ</h3>
+                        <span class="mb-m">Малый Знаменский пер., 3/5с4</span>
+
+                        <a href="/buildings/3" id="building-3-more" aria-labelledby="building-3-more building-3-name">Подробнее</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-4.bd0bbd91.png" alt="" class="mb-l">
+                        <h3 id="building-4-name" class="mb-s">УЧЕБНЫЙ МУЗЕЙ</h3>
+                        <span class="mb-m">ул. Чаянова, 15</span>
+
+                        <a href="/buildings/4" id="building-4-more" aria-labelledby="building-4-more building-4-name">Подробнее</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-5.42e469b4.png" alt="" class="mb-l">
+                        <h3 id="building-5-name" class="mb-s">ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
+                        <span class="mb-m">ул. Волхонка, 10</span>
+
+                        <a href="/buildings/5" id="building-5-more" aria-labelledby="building-5-more building-5-name">Подробнее</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="building-card">
+                        <img src="/assets/building-6.3881d5b5.png" alt="" class="mb-l">
+                        <h3 id="building-6-name" class="mb-s">ГАЛЕРЕЯ</h3>
+                        <span class="mb-m">ул. Волхонка, 14</span>
+
+                        <a href="/buildings/6" id="building-6-more" aria-labelledby="building-6-more building-6-name">Подробнее</a>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="history-tab"
+             aria-labelledby="history"
+             class="d-none">
+            <article>
+                <p>
+                    Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России
+                    художественных собраний зарубежного искусства с древнейших времен до наших дней.
+                </p>
+                <p>
+                    В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с
+                    произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных произведений
+                    живописи, скульптуры, графики и декоративно-прикладного искусства.
+                </p>
+                <p>
+                    В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта,
+                    Античности,
+                    собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий дворики –
+                    занимают
+                    слепки. На втором этаже Главного здания в залах размещены слепки произведений искусства Древней
+                    Греции,
+                    Рима, Средних веков и Возрождения.
+                </p>
+                <p>
+                    В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, –
+                    ориентированное
+                    на современное российское и западное искусство во всех аспектах – выставочном, образовательном и
+                    исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой открытую, интерактивную
+                    сцену,
+                    демонстрирующую развитие мировой культуры с древности до наших дней, живое, знакомое с детства
+                    пространство
+                    для получения знаний и общения.
+                </p>
+                <a href="">Читать далее</a>
+            </article>
+        </div>
+    </section>
+    <section aria-labelledby="broadcast-header" class="section-margins">
+        <h2 id="broadcast-header" class="h2">Онлайн-трансляции
+            <span class="visually-hidden">Ай Вейвей: движение к общечеловеческому</span>
+        </h2>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/5qRR-5H1XgU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+    <section aria-labelledby="online-exhibitions-header" class="section-margins">
+        <h2 id="online-exhibitions-header" class="h2">Экскурсии и лекции в прямом эфире</h2>
+        <p>
+            С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и
+            детей,
+            оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен формат
+            живого
+            общения с возможностью задавать вопросы экскурсоводу (лектору).
+            <a href="/virtual-lectures">Подробнее про эфиры</a>.
+        </p>
+        <br>
+        <p>
+            Мы будем благодарны за любое <a href="/donation">пожертвование</a>. Все поступившие средства будут
+            направлены на
+            организацию онлайн-проектов для наших посетителей.
+        </p>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__left">
+        <nav aria-label="Дополнительная информация" class="mb-m footer__nav">
+            <a href="/visitiors-with-disabilities">Посетителям с ограниченными возможностями</a>
+            <a href="/tickets">Билеты и льготы</a>
+            <a href="/against-corruption">Противодействие коррупции</a>
+        </nav>
+        <div>
+            <h2 class="socials__header mb-s">Соц. сети</h2>
+            <ul class="socials__list">
+                <li class="socials__list-element">
+                    <a href="facebook" aria-label="Facebook"
+                       target="_blank"
+                       rel="noreferrer"
+                    ><img src="/assets/fb.acc1cb8c.svg" alt="">
+                    </a>
+                </li>
+                <li class="socials__list-element">
+                    <a href="telegram" aria-label="Telegram"
+                       target="_blank"
+                       rel="noreferrer"><img src="/assets/telegram.153490ac.svg" alt="">
+                    </a>
+                </li>
+                <li class="socials__list-element">
+                    <a href="gmail" aria-label="Email"
+                       target="_blank"
+                       rel="noreferrer"><img src="/assets/mail.dce5391b.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <form action="/subscribe" class="subscription">
+            <h2 class="subscription__header">Подписка на новости</h2>
+            <div class="subscription__email">
+                <label for="subscription-email">E-mail</label>
+                <input id="subscription-email"
+                       type="email"
+                       required
+                       autocomplete="email"
+                       class="subscription__email-input"
+                       placeholder="your_email@gmail.com"
+                >
+            </div>
+            <div class="subscription__personal-data">
+                <input id="personal-data-agreement" type="checkbox" required>
+                <label for="personal-data-agreement">Согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="btn-link subscription__submit">Подписаться</button>
+        </form>
+    </div>
+</footer>
+</body>
+
+</html>
