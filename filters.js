@@ -3,6 +3,7 @@ export function instrumentFilter() {
     const today = document.querySelector("#exhibition-filter-today")
     const tomorrow = document.querySelector("#exhibition-filter-tomorrow")
     const exhibitions = document.querySelector("#exhibitions-list")
+    const filterResults = document.querySelector("#exhibitions-filter-results")
 
     today.addEventListener('click', () => {
         today.classList.add("active")
@@ -11,6 +12,7 @@ export function instrumentFilter() {
         for (const child of exhibitions.children) {
             child.classList.remove("d-none")
         }
+        filterResults.textContent = "Доступны 3 выставки"
     })
 
     all.addEventListener('click', () => {
@@ -20,6 +22,7 @@ export function instrumentFilter() {
         for (const child of exhibitions.children) {
             child.classList.remove("d-none")
         }
+        filterResults.textContent = "Доступны 3 выставки"
     })
 
     tomorrow.addEventListener('click', () => {
@@ -27,6 +30,7 @@ export function instrumentFilter() {
         today.classList.remove("active")
         all.classList.remove("active")
         exhibitions.children[2].classList.add("d-none")
+        filterResults.textContent = "Доступны 2 выставки"
     })
 }
 
