@@ -326,9 +326,10 @@ h3 {
 .skip-to-main {
   position: fixed;
   top: -1000px;
+  z-index: 2;
 }
 
 .skip-to-main:focus {
+  left: 1rem;
   top: 1rem;
-  z-index: 2;
 }
